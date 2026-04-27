@@ -16,6 +16,7 @@ const container = document.getElementById('shortcut-container');
 const content = shortcuts.map(url => `
 	<a class="shortcut-anchor" href="https://${url}">
 		<img class="shortcut" src="shortcuts/${url}.svg">
+		<span class="tooltip">${url}</span>
 	</a>
 `);
 
