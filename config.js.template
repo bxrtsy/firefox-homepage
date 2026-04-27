@@ -1,0 +1,30 @@
+/*
+	SEARCH
+*/
+
+const enable_search = true;
+
+const search_engine_name = "DuckDuckGo";
+const search_engine_url = "https://duckduckgo.com/";
+
+// const search_engine_name = "Google";
+// const search_engine_url = "https://www.google.com/search/";
+
+// const search_engine_name = ""
+
+
+/*
+	SHORTCUTS
+*/
+
+const enable_shortcuts = true;
+
+const enable_new_shortcut = true;
+
+// Your shortcuts go here
+const shortcuts = [
+	// 'www.spotify.com',
+	'www.wikipedia.org',
+	'www.youtube.com',
+	'www.reddit.com'
+];

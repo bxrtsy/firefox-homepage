@@ -6,6 +6,7 @@
 		<title>Welcome</title>
 		<link rel="icon" type="image/svg+xml" href="resources/icon.svg" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="config.js"></script>
 		<script async src="main.js"></script>
 	</head>
 	<body>
@@ -14,13 +15,12 @@
 				<img src="chrome://branding/content/about-logo.png" width="64" height="64" />
 				<div class="firefox-title">Firefox</div>
 			</div>
-			<form action="https://duckduckgo.com/" method="GET">
-				<input type="text" name="q" placeholder="Search with DuckDuckGo">
-			</form>
-			<div id="shortcut-container" class="shortcut-section"></div>
+			<div id="search-wrapper"></div>
+			<div id="shortcut-wrapper"></div>
 		</main>
 		<footer>
-			<img draggable="false" src="./resources/footer.svg">		<span><a href="https://github.com/bxrtsy/firefox-homepage">Repository</a> • <a href="https://github.com/bxrtsy/firefox-homepage/blob/main/LICENSE">Licensing</a></span>
+			<img draggable="false" src="./resources/footer.svg">
+			<span><a href="https://github.com/bxrtsy/firefox-homepage">Repository</a> • <a href="https://github.com/bxrtsy/firefox-homepage/blob/main/LICENSE">Licensing</a></span>
 		</footer>
 	</body>
 </html>
