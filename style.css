@@ -1,6 +1,12 @@
 html {
 	background-color: #11111b;
+	font-family: Noto Sans, sans-serif;
 	margin: 0;
+	color: #cdd6f4;
+}
+
+::selection {
+  background: #cba6f780;
 }
 
 body {
@@ -22,21 +28,15 @@ main {
 	padding: 128px;
 }
 
-.firefox-logo {
+footer {
 	display: flex;
-	flex-flow: row;
-	align-items: center;
+	flex-flow: column;
 	justify-content: center;
-	gap: 12px;
+	align-items: center;
+	color: #a6adc8;
 }
 
-.firefox-title {
-	font-weight: bold;
-	font-size: 36px;
-	background: linear-gradient(to right, #fab387, #cba6f7);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+img {
 	user-select: none;
 }
 
@@ -62,9 +62,30 @@ input:focus, a:focus {
 }
 
 a {
-	padding: 0;
-	margin: 0;
-	border-radius: 24px;
+	text-decoration: none;
+	color: #89b4fa;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.firefox-logo {
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+}
+
+.firefox-title {
+	font-weight: bold;
+	font-size: 36px;
+	background: linear-gradient(to right, #fab387, #cba6f7);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	user-select: none;
 }
 
 .shortcut-section {
@@ -73,6 +94,12 @@ a {
 	justify-content: center;
 	align-items: center;
 	gap: 18px;
+}
+
+.shortcut-anchor {
+	padding: 0;
+	margin: 0;
+	border-radius: 24px;
 }
 
 .shortcut {
@@ -86,11 +113,4 @@ a {
 
 .shortcut:hover {
 	background-color: #45475a;
-}
-
-footer {
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
 }
