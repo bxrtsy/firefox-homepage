@@ -64,6 +64,7 @@ input:focus, a:focus {
 a {
 	text-decoration: none;
 	color: #89b4fa;
+	
 }
 
 a:hover {
@@ -109,6 +110,7 @@ a:hover {
 	padding: 12px;
 	width: 36px;
 	height: 36px;
+	transition: background-color 0.1s ease-in-out;
 }
 
 .shortcut:hover {
