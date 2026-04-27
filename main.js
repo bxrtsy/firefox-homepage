@@ -6,6 +6,7 @@ const shortcuts = [
 	'www.reddit.com',
 	'www.youtube.com',
 	'music.youtube.com',
+	'www.pinterest.com',
 	'gemini.google.com',
 	// 'www.spotify.com'
 ];
