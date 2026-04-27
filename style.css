@@ -11,24 +11,22 @@ html {
 
 body {
 	margin: 0;
-	padding: 0;
-}
-
-header {
-	background-color: #1e1e2e;
-	padding: 24px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 main {
 	display: flex;
-	flex-flow: column;
+	flex: 1;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 36px;
-	padding: 128px;
 }
 
 footer {
+	margin: 0 0 24px 0;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
@@ -91,7 +89,7 @@ a:hover {
 
 .shortcut-section {
 	display: flex;
-	flex-flow: row;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 	gap: 18px;
@@ -100,14 +98,14 @@ a:hover {
 .shortcut-anchor {
 	padding: 0;
 	margin: 0;
-	border-radius: 24px;
+	border-radius: 16px;
 	position: relative;
 	display: inline-block;
 }
 
 .shortcut {
 	display: block;
-	border-radius: 24px;
+	border-radius: 16px;
 	background-color: #181825;
 	padding: 12px;
 	width: 36px;
