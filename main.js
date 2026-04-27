@@ -14,11 +14,11 @@ const container = document.getElementById('shortcut-container');
 
 // Put SVG icon in shortcuts/ when adding a shortcut
 const content = shortcuts.map(url => `
-	<a href="https://${url}">
+	<a class="shortcut-anchor" href="https://${url}">
 		<img class="shortcut" src="shortcuts/${url}.svg">
 	</a>
 `);
 
-// content.push('<a href="main.js"><img class="shortcut" src="shortcuts/new.svg"></a>');
+// content.push('<a class="shortcut-anchor" href="main.js"><img class="shortcut" src="shortcuts/new.svg"></a>');
 
 container.innerHTML = content.join('');
