@@ -2,8 +2,6 @@
 
 Local Catppuccin-themed homepage for Firefox.
 
-This project is licensed under [The Unlicense](https://unlicense.org).
-
 **Before you proceed:** I was making this project for personal use, so I didn't think much about other resolutions (my laptop is 1366x768px), therefore there might be unexpected behaviour, so I **don't recommend** this project. If you really like it (thanks!), you should either fork it or find a fork of it (doubtful???).
 
 ## Installation
@@ -23,3 +21,9 @@ This project is licensed under [The Unlicense](https://unlicense.org).
 ## Search engine
 
 To change the search engine, as the default is DuckDuckGo, you simply find this line in `index.html`: `<form action="https://duckduckgo.com/" method=GET>`, and edit the URL, e.g. `https://www.google.com/`.
+
+## Licensing
+
+This project is licensed under [The Unlicense](https://unlicense.org).
+
+This project is not affiliated with, sponsored by, or endorsed by any of the companies represented.
