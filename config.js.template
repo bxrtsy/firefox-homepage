@@ -8,9 +8,7 @@ const search_engine_name = "DuckDuckGo";
 const search_engine_url = "https://duckduckgo.com/";
 
 // const search_engine_name = "Google";
-// const search_engine_url = "https://www.google.com/search/";
-
-// const search_engine_name = ""
+// const search_engine_url = "https://www.google.com/search";
 
 
 /*
