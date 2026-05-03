@@ -7,25 +7,24 @@ if (enable_search) {
 	`
 }
 
+function create_shortcut(url, image, tooltip) {
+	return `
+		<a class="shortcut-anchor" href="${url}">
+			<img class="shortcut" src="shortcuts/${image}.svg"
+				 onerror="this.src='shortcuts/placeholder.svg'; this.onerror=null;">
+			<span class="tooltip">${tooltip}</span>
+		</a>
+	`;
+}
+
 if (enable_shortcuts) {
 	const shortcut_wrapper = document.getElementById("shortcut-wrapper");
 
 	// Put SVG icon in shortcuts/ when adding a shortcut
-	const content = shortcuts.map(url => `
-		<a class="shortcut-anchor" href="https://${url}">
-			<img class="shortcut" src="shortcuts/${url}.svg"
-				 onerror="this.src='shortcuts/placeholder.svg'; this.onerror=null;">
-			<span class="tooltip">${url}</span>
-		</a>
-	`);
+	const content = shortcuts.map(url => create_shortcut('https://' + url, url, url));
 
 	if (enable_new_shortcut) {
-		content.push(`
-			<a class="shortcut-anchor" href="config.js">
-				<img class="shortcut" src="shortcuts/new.svg">
-				<span class="tooltip">New shortcut</span>
-			</a>
-		`);
+		content.push(create_shortcut('config.js', 'new', 'New shortcut'));
 	}
 
 	shortcut_wrapper.innerHTML = content.join('');
