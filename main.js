@@ -13,7 +13,8 @@ if (enable_shortcuts) {
 	// Put SVG icon in shortcuts/ when adding a shortcut
 	const content = shortcuts.map(url => `
 		<a class="shortcut-anchor" href="https://${url}">
-			<img class="shortcut" src="shortcuts/${url}.svg">
+			<img class="shortcut" src="shortcuts/${url}.svg"
+				 onerror="this.src='shortcuts/unknown.svg'; this.onerror=null;">
 			<span class="tooltip">${url}</span>
 		</a>
 	`);
