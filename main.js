@@ -14,7 +14,7 @@ if (enable_shortcuts) {
 	const content = shortcuts.map(url => `
 		<a class="shortcut-anchor" href="https://${url}">
 			<img class="shortcut" src="shortcuts/${url}.svg"
-				 onerror="this.src='shortcuts/unknown.svg'; this.onerror=null;">
+				 onerror="this.src='shortcuts/placeholder.svg'; this.onerror=null;">
 			<span class="tooltip">${url}</span>
 		</a>
 	`);
